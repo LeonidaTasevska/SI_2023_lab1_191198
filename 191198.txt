@@ -1,0 +1,64 @@
+4. Креирав папка на Desktop со исто име како remote репозиториумот на GitHub
+Во cmd ги пишав следните команди, навигирав до папката на десктоп па иницијализирав празен гит репозиториум
+cd Desktop
+cd SI*
+git init
+Initialized empty Git repository in C:/Users/HP/Desktop/SI_2023_lab1_191198/.git/
+5. Локалниот репозиториум го поврзав со remote репозиториумот преку GIit Bash, ги користев следните команди
+Навигирав до локалниот гит репозиториум
+cd Desktop
+cd SI*
+git status за да проверам дали репото е чисто
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+git remote за проверка дали има некој линкуван репозиториум, командата не врати ништо
+
+И за конечно да го поврзам локалното репо со ремоте ја искористив командата 
+git remote add origin https://github.com/LeonidaTasevska/SI_2023_lab1_191198.git
+
+за да проверам дали е поврзано ја користев командата git remote
+
+ми врати origin што значи дека origin repository available
+
+со командата git remote -v се враќа истиот резултат со линкот
+origin  https://github.com/LeonidaTasevska/SI_2023_lab1_191198.git (fetch)
+origin  https://github.com/LeonidaTasevska/SI_2023_lab1_191198.git (push)
+6. Јас по грешка уште при самото креирање на репото направив README фајл па истиот само го изменив и за додадов пораката Initial commit. Инаку фајл се додава во Add file, Create new file, се внесува името на фајлот + содржината и пораката + Commit
+$ git add README.md
+$ git status
+$ git commit -m "Initial commit"
+
+7. Kako што споменав погоре со Add file додавам нов фајл .java
+$ git add SILab1.java
+$ git status
+$ git commit -m "Add java class"
+
+8. Синхронизација се прави со $ git merge upstream/master но кај мене не сакаше.. merge: upstream/master - not something we can merge
+или git fetch origin --prune ama same again
+
+27. имам проблем со логовите
+$ git add logs.txt
+$ git status
+$ git commit -m "Add logs"
+
+28.
+$ git add 191198.txt
+$ git status
+$ git commit -m "Final commit"
+Синхронизација
+git fetch origin --prune
+$ git pull https://github.com/LeonidaTasevska/SI_2023_lab1_191198.git master
+ми даде already up to date, но не ја гледам промената на ремоте репото
+
+Синхронизирање на локалното репо со ремоте
+git fetch origin
+git reset --hard origin/master
+git clean -f -d
+
+
+P.S. Имам работено лабс во 2021 ако се признава
+линк до репото од тогаш
+https://github.com/LeonidaTasevska/SI_2021_lab1_191198.git
