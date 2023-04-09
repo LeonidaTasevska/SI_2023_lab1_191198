@@ -1,0 +1,36 @@
+4. Креирав папка на Desktop со исто име како remote репозиториумот на GitHub
+Во cmd ги пишав следните команди, навигирав до папката на десктоп па иницијализирав празен гит репозиториум
+cd Desktop
+cd SI*
+git init
+Initialized empty Git repository in C:/Users/HP/Desktop/SI_2023_lab1_191198/.git/
+5. Локалниот репозиториум го поврзав со remote репозиториумот преку GIit Bash, ги користев следните команди
+Навигирав до локалниот гит репозиториум
+cd Desktop
+cd SI*
+git status за да проверам дали репото е чисто
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+git remote за проверка дали има некој линкуван репозиториум, командата не врати ништо
+
+И за конечно да го поврзам локалното репо со ремоте ја искористив командата 
+git remote add origin https://github.com/LeonidaTasevska/SI_2023_lab1_191198.git
+
+за да проверам дали е поврзано ја користев командата git remote
+
+ми врати origin што значи дека origin repository available
+
+со командата git remote -v се враќа истиот резултат со линкот
+origin  https://github.com/LeonidaTasevska/SI_2023_lab1_191198.git (fetch)
+origin  https://github.com/LeonidaTasevska/SI_2023_lab1_191198.git (push)
+6. Јас по грешка уште при самото креирање на репото направив README фајл па истиот само го изменив и за додадов пораката Initial commit. Инаку фајл се додава во Add file, Create new file, се внесува името на фајлот + содржината и пораката + Commit
+
+7. Kako што споменав погоре со Add file додавам нов фајл .java
+
+8. Синхронизација се прави со $ git merge upstream/master но кај мене не сакаше.. merge: upstream/master - not something we can merge
+или git fetch origin --prune ama same again
+
+27. имам проблем со логовите
